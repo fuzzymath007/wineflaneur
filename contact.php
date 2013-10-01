@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 		
 		
-    require_once('class.phpmailer.php');
+    require_once('/class.phpmailer.php');
     $mail = new PHPMailer();
     
     if (!isset($error_message) && !$mail->ValidateAddress($email)){
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <?php 
 $pageTitle = "Contact Matt";
 $section = "contact";
-include('inc/header.php'); ?>
+include('/header.php'); ?>
 
 <div class="section page">
 
@@ -124,4 +124,4 @@ include('inc/header.php'); ?>
 
 	</div>
 
-<?php include('inc/footer.php') ?>
+<?php include('/footer.php') ?>

@@ -13,8 +13,8 @@ include('inc/header.php'); ?>
 <div class="feature">
 	<h1>Welcome</h1>
 		<p>
-			<a href="inc/resume.pdf" class="btn btn-large btn-primary" type="button">View Resume</a>
-			<a href="current_projects.php" class="btn btn-large" type="button">View Current Projects</a>
+			<a href="/resume.pdf" class="btn btn-large btn-primary" type="button">View Resume</a>
+			<a href="/current_projects.php" class="btn btn-large" type="button">View Current Projects</a>
 		</p>
 
 

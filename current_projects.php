@@ -43,5 +43,5 @@ include('inc/header.php'); ?>
 </script>
 
 
-<script src="inc/js/bootstrap.min.js"></script>
+<script src="/bootstrap.min.js"></script>
 <?php include('inc/footer.php'); ?>

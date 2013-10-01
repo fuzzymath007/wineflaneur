@@ -22,8 +22,8 @@ if (isset($_GET["id"])){
 ?>
 
 <ul class="breadcrumb">
-  <li><a href="development.php">Development</a> <span class="divider">/</span></li>
-  <li><a href="sample_store.php">Products</a> <span class="divider">/</span></li>
+  <li><a href="/development.php">Development</a> <span class="divider">/</span></li>
+  <li><a href="/sample_store.php">Products</a> <span class="divider">/</span></li>
   <li class="active"> <? echo $product['name']; ?></li>
 </ul>
 
@@ -44,7 +44,7 @@ if (isset($_GET["id"])){
 
 
 
- <? include('inc/footer.php'); ?>
+ <? include('/footer.php'); ?>
  
  
  
