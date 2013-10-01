@@ -38,15 +38,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $mail->SetFrom($email, $name);
         $address = "mchess@umich.edu";
-        $mail->AddAddress($address, "Shirts 4 Mike");
-        $mail->Subject    = "Shirts 4 Mike Contact Form Submission | " . $name;
+        $mail->AddAddress($address, "MC");
+        $mail->Subject    = "Contact Matt | " . $name;
         $mail->MsgHTML($email_body); 
 
         if($mail->Send()) {
             header("Location: contact.php?status=thanks");
             exit;
         } else {
-          $error_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+          $error_message = "There was a problem sending your email: " . $mail->ErrorInfo;
         }
 
     }
