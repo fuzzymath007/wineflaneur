@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <?php 
 $pageTitle = "Contact Matt";
 $section = "contact";
-include('/header.php'); ?>
+include('inc/header.php'); ?>
 
 <div class="section page">
 
@@ -124,4 +124,4 @@ include('/header.php'); ?>
 
 	</div>
 
-<?php include('/footer.php') ?>
+<?php include('inc/footer.php') ?>
