@@ -15,14 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             }
         }
     }
-
-
     if (!isset($error_message) && $_POST["address"] != "") {
         $error_message = "Your form submission has an error.";
-    }
-
-		
-		
+    }	
     require_once('/class.phpmailer.php');
     $mail = new PHPMailer();
     
@@ -56,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 $pageTitle = "Contact Matt";
 $section = "contact";
 include('inc/header.php'); ?>
-
+<body>
 <div class="section page">
 
 		<div class="wrapper">
@@ -84,6 +79,7 @@ include('inc/header.php'); ?>
                             </th>
                             <td>
                                 <input type="text" name="name" id="name" value="<?php if (isset($name)){ echo htmlspecialchars($name);} ?>">
+                                <span>Please enter your name</span>
                             </td>
                         </tr>
                         <tr>
@@ -92,6 +88,7 @@ include('inc/header.php'); ?>
                             </th>
                             <td>
                                 <input type="text" name="email" id="email" value="<?php if (isset($email)){ echo htmlspecialchars($email);} ?>">
+                                <span>Please enter your Email</span>
                             </td>
                         </tr>
                         <tr>
@@ -100,6 +97,7 @@ include('inc/header.php'); ?>
                             </th>
                             <td>
                                 <textarea name="message" id="message"><?php if (isset($message)){ echo htmlspecialchars($message);} ?></textarea>
+                                <span>Please enter your message</span>
                             </td>
                         </tr>
                         <tr style="display: none;">
@@ -124,4 +122,20 @@ include('inc/header.php'); ?>
 
 	</div>
 
+    <script type="text/javascript" src="inc/js/jquery.js"></script>
+    <script type="text/javascript">
+    $("form span").hide();
+    $("input,textarea").focus(function(){
+        $(this).next().fadeIn("slow");
+    }).blur(function(){
+        $(this).next().fadeOut("slow");
+    }).keyup(function (){
+        //Check all required fields.
+    });
+
+    $("#email").keyup(function(){
+        //check for a valid email.
+    });
+    </script>
+</body>
 <?php include('inc/footer.php') ?>
