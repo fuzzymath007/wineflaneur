@@ -70,15 +70,16 @@ include('inc/header.php'); ?>
 				}else{
 					echo '<p class="alert">' . $error_message . '</p>';}
 				?>
+		
+				
                 <form method="post" action="contact.php">
-
                     <table>
                         <tr>
                             <th>
                                 <label for="name">Name</label>
                             </th>
                             <td>
-                                <input type="text" name="name" id="name" value="<?php if (isset($name)){ echo htmlspecialchars($name);} ?>">
+                                <input type="text" name="name" id="name" value="<?php if (isset($name)){ echo htmlspecialchars($name);} ?>" class="required">
                                 <span>Please enter your name</span>
                             </td>
                         </tr>
@@ -87,7 +88,7 @@ include('inc/header.php'); ?>
                                 <label for="email">Email</label>
                             </th>
                             <td>
-                                <input type="text" name="email" id="email" value="<?php if (isset($email)){ echo htmlspecialchars($email);} ?>">
+                                <input type="text" name="email" id="email" value="<?php if (isset($email)){ echo htmlspecialchars($email);} ?>" class="required">
                                 <span>Please enter your Email</span>
                             </td>
                         </tr>
@@ -96,7 +97,7 @@ include('inc/header.php'); ?>
                                 <label for="message">Message</label>
                             </th>
                             <td>
-                                <textarea name="message" id="message"><?php if (isset($message)){ echo htmlspecialchars($message);} ?></textarea>
+                                <textarea name="message" id="message" class="required"><?php if (isset($message)){ echo htmlspecialchars($message);} ?></textarea>
                                 <span>Please enter your message</span>
                             </td>
                         </tr>
@@ -109,9 +110,13 @@ include('inc/header.php'); ?>
                                 <p>DO not fill out this field</p>
                             </td>
                         </tr>                    
-                    </table>
+                  <tr>
+                  	<th>
                     <input type="submit" value="Send">
-
+                  	</th>
+                  </tr>
+  
+				  </table>
                 </form>
                 
                <?php } ?>
@@ -124,18 +129,46 @@ include('inc/header.php'); ?>
 
     <script type="text/javascript" src="inc/js/jquery.js"></script>
     <script type="text/javascript">
+			var $submit = $("submit input");
+			var $required = $(".required");
+			function containsBlanks(){
+				var blanks = new Array();
+				$required.each(function(){
+					blanks.push($(this).val == "");
+				});
+				return blanks.indexOf(true) != -1;
+			}
+
+			function isValidEmail(email){
+				return email.indexOf("@") != -1;
+			}
+
+			function requiredFilledIn(){
+				if(containsBlanks() || !isValidEmail($("#email").val())) 
+					$submit.attr("disabled","disabled");
+				else 
+					$submit.removeAttr("disabled");
+			}
+    
     $("form span").hide();
-    $("input,textarea").focus(function(){
+    $("input, textarea").focus(function(){
         $(this).next().fadeIn("slow");
     }).blur(function(){
         $(this).next().fadeOut("slow");
     }).keyup(function (){
         //Check all required fields.
+        requiredFilledIn();
     });
 
     $("#email").keyup(function(){
         //check for a valid email.
+				if(isValidEmail($(this).val()))
+				 $(this).next().removeClass("error").addClass("valid");
+				else 
+				 $(this).next().removeClass("valid").addClass("error");
     });
+    
+    	requiredFilledIn();
     </script>
 </body>
 <?php include('inc/footer.php') ?>
