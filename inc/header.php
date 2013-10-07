@@ -14,6 +14,7 @@
       <li><a href="design.php">Design</a></li>
       <li><a href="development.php">Development</a></li>
       <li><a href="contact.php">Contact</a></li>
+      <li><a href="location.php">Location</a></li>
     </ul>
   </div>
 </div>

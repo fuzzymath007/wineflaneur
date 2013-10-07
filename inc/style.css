@@ -111,6 +111,12 @@ filter:alpha(opacity=90); /* For IE8 and earlier */
 		color:red;
 	}
 
+#map{
+	width: 100%;
+	min-height: 300px;
+	margin: 0 0 4% 0;
+	
+}
 
 
 
