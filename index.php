@@ -14,7 +14,7 @@ include('inc/header.php'); ?>
 	<h1>Welcome</h1>
 	<h3>What would you like to view?</h3>
 		<p>
-			<a href="/resume.pdf" class="btn btn-large btn-primary" type="button">View Resume</a>
+			<a href="/inc/resume.pdf" class="btn btn-large btn-primary" type="button">View Resume</a>
 			<a href="/current_projects.php" class="btn btn-large" type="button">View Current Projects</a>
 		</p>
 

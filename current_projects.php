@@ -6,27 +6,23 @@ include('inc/header.php'); ?>
 <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
   <div class="carousel-inner">
     <div class="item active"><!-- class of active since it's the first item -->
-      <img src="http://placehold.it/1500x550" alt="" />
+      <img src="inc/img/handmadecms.png" alt="" />
       <div class="carousel-caption">
-        <p>Caption text here</p>
+        <p>Coming Soon</p>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1500x550" alt="" />
+      <img src="inc/img/contact_form.png"/>
       <div class="carousel-caption">
-        <p>Caasdfe</p>
+        <!--<p>Contact Form</p>-->
+        <a class="btn btn-info" href="contact.php">Click to View</a>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1500x550" alt="" />
+      <img src="inc/img/google_maps.png" alt="" />
       <div class="carousel-caption">
-        <p>Casdfgsdfgere</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/1500x550" alt="" />
-      <div class="carousel-caption">
-        <p>Captsdfe</p>
+        <!--<p>Google Maps API</p>-->
+        <a class="btn btn-info" href="location.php">Click to View</a>
       </div>
     </div>
   </div><!-- /.carousel-inner -->
