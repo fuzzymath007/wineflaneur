@@ -17,10 +17,14 @@ include('inc/header.php'); ?>
 			<a href="/inc/resume.pdf" class="btn btn-large btn-primary" type="button">View Resume</a>
 			<a href="/current_projects.php" class="btn btn-large" type="button">View Current Projects</a>
 		</p>
-
-
-
 	</div> 
+	
+	<div class="feature">
+	<h3>Links to Social Networks</h3>
+	<a href="http://www.twitter.com/fuzzymath007" ><img src="/inc/img/twitter.png" height="100px" width="100px">Visit Matthew Chess @Twitter</a>
+	<a href="http://www.linkedin.com/in/matthewchess" ><img src="/inc/img/linkedin.png" height="100px" width="100px">Visit Matthew Chess on Linked In</a>
+	<a href="http://github.com/fuzzymath007" ><img src="/inc/img/github.png" height="150px" width="150px">View coding projects on Github</a>
+	</div>
 </body>
 
  
