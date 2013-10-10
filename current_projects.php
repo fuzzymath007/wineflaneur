@@ -8,7 +8,8 @@ include('inc/header.php'); ?>
     <div class="item active"><!-- class of active since it's the first item -->
       <img src="inc/img/handmadecms.png" alt="" />
       <div class="carousel-caption">
-        <p>Coming Soon</p>
+        <p>Working! (but under construction!)</p>
+        <a class="btn btn-info" href="display.php">Click to View</a>
       </div>
     </div>
     <div class="item">
