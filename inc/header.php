@@ -11,8 +11,8 @@
     <a class="brand" href="index.php">Matthew Chess</a>
     <ul class="nav">
       <li class="active"><a href="current_projects.php">Home</a></li>
-      <li><a href="design.php">Design</a></li>
-      <li><a href="development.php">Development</a></li>
+      <li><a href="frontend.php">Front-End</a></li>
+      <li><a href="backend.php">Back-End</a></li>
       <li><a href="contact.php">Contact</a></li>
       <li><a href="location.php">Location</a></li>
     </ul>
