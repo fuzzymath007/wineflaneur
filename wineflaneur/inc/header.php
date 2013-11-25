@@ -1,20 +1,20 @@
 <title><?php echo $pageTitle; ?></title>
 
-<link rel="stylesheet" href="inc/style.css">
-<link rel="stylesheet" href="inc/flexstyle.css" type="text/css">
-<link rel="stylesheet" href="inc/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="inc/css/bootstrap-responsive.css" type="text/css">
-<link rel="stylesheet" href="inc/css/bootstrap-responsive.min.css" type="text/css">
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>inc/style.css">
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>inc/flexstyle.css" type="text/css">
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>inc/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>inc/css/bootstrap-responsive.css" type="text/css">
+<link rel="stylesheet" href="<?php echo BASE_URL; ?>inc/css/bootstrap-responsive.min.css" type="text/css">
 
 <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="index.php">Matthew Chess</a>
     <ul class="nav">
       <li class="active"><a href="current_projects.php">Home</a></li>
-      <li><a href="frontend.php">Front-End</a></li>
-      <li><a href="backend.php">Back-End</a></li>
-      <li><a href="contact.php">Contact</a></li>
-      <li><a href="location.php">Location</a></li>
+      <li><a href="<?php echo BASE_URL; ?>frontend/">Front-End</a></li>
+      <li><a href="<?php echo BASE_URL; ?>backend/">Back-End</a></li>
+      <li><a href="<?php echo BASE_URL; ?>contact/">Contact</a></li>
+      <li><a href="<?php echo BASE_URL; ?>location/">Location</a></li>
     </ul>
   </div>
 </div>

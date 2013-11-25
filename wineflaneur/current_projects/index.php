@@ -1,26 +1,27 @@
 <?PHP 
 $pageTitle = "Current Projects";
-include('inc/header.php'); ?>
+require_once('../inc/config.php');
+include(ROOT_PATH . 'inc/header.php'); ?>
 <body>
 <div class="container-fluid">
 <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
   <div class="carousel-inner">
     <div class="item active"><!-- class of active since it's the first item -->
-      <img src="inc/img/handmadecms.png" alt="" />
+      <img src="<?php echo BASE_URL; ?>inc/img/handmadecms.png" alt="" />
       <div class="carousel-caption">
         <p>Working! (but under construction!)</p>
         <a class="btn btn-info" href="display.php">Click to View</a>
       </div>
     </div>
     <div class="item">
-      <img src="inc/img/contact_form.png"/>
+      <img src="<?php echo BASE_URL; ?>inc/img/contact_form.png"/>
       <div class="carousel-caption">
         <!--<p>Contact Form</p>-->
         <a class="btn btn-info" href="contact.php">Click to View</a>
       </div>
     </div>
     <div class="item">
-      <img src="inc/img/google_maps.png" alt="" />
+      <img src="<?php echo BASE_URL; ?>inc/img/google_maps.png" alt="" />
       <div class="carousel-caption">
         <!--<p>Google Maps API</p>-->
         <a class="btn btn-info" href="location.php">Click to View</a>
@@ -55,5 +56,5 @@ include('inc/header.php'); ?>
 </script>
 
 
-<script src="/bootstrap.min.js"></script>
-<?php include('inc/footer.php'); ?>
+<script src="<?php echo BASE_URL; ?>inc/js/bootstrap.min.js"></script>
+<?php include(ROOT_PATH . 'inc/footer.php'); ?>

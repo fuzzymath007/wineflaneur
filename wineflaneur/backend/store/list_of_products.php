@@ -12,7 +12,7 @@ function get_list_view($product_id, $product){
               $output = $output . $product[price];
               $output = $output .'</p>';
               $output = $output .'<p>';
-			  $output = $output .'<p><a class="btn" href="product.php?id=' . $product_id . '">View details &raquo;</a></p>';	
+			  $output = $output .'<p><a class="btn" href="'BASE_URL.'backend/store/product.php?id=' . $product_id . '">View details &raquo;</a></p>';	
 			$output = $output .'</div>';
 
 

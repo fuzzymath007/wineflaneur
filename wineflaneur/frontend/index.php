@@ -1,6 +1,7 @@
 <?PHP 
 $pageTitle = "Design";
-include('inc/header.php'); ?>
+require_once('../inc/config.php');
+include(ROOT_PATH . 'inc/header.php'); ?>
 
 <!-- Button to trigger modal -->
 <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch a sample Modal</a>
@@ -19,4 +20,4 @@ include('inc/header.php'); ?>
   </div>
 </div>
 
-<?php include('inc/footer.php'); ?>
+<? include(ROOT_PATH . 'inc/footer.php'); ?>

@@ -1,7 +1,8 @@
 <?PHP 
 $pageTitle = $product["name"];
-include('inc/header.php'); 
-include('inc/products.php');
+require_once('../../inc/config.php');
+include(ROOT_PATH . 'inc/header.php') 
+include(BASE_URL . 'backend/store/list_of_products.php');
 
 
 if (isset($_GET["id"])){
@@ -16,9 +17,6 @@ if (isset($_GET["id"])){
 		exit();
 	}
 
-
-
-
 ?>
 
 <ul class="breadcrumb">
@@ -26,21 +24,6 @@ if (isset($_GET["id"])){
   <li><a href="/sample_store.php">Products</a> <span class="divider">/</span></li>
   <li class="active"> <? echo $product['name']; ?></li>
 </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
