@@ -18,6 +18,9 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 			<a href="<?php echo BASE_URL; ?>inc/resume.pdf" class="btn btn-large btn-primary" type="button">View Resume</a>
 			<a href="<?php echo BASE_URL; ?>current_projects/" class="btn btn-large" type="button">View Current Projects</a>
 		</p>
+		<p>
+		<a href="http://blog.wineflaneur.com" class="btn btn-large" type="button">View Blog</a>
+		</p>
 	</div> 
 	
 	<div class="feature">

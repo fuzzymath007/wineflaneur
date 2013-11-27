@@ -15,6 +15,7 @@
       <li><a href="<?php echo BASE_URL; ?>backend/">Back-End</a></li>
       <li><a href="<?php echo BASE_URL; ?>contact/">Contact</a></li>
       <li><a href="<?php echo BASE_URL; ?>location/">Location</a></li>
+      <li><a href="http://blog.wineflaneur.com" type="button">View Blog</a></li>
     </ul>
   </div>
 </div>
