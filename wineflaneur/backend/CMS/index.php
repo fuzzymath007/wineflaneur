@@ -1,4 +1,7 @@
-<?php include('inc/header.php'); ?>
+<?php 
+$pageTitle="CMS";
+require_once('../../inc/config.php');
+include(ROOT_PATH . 'inc/header.php'); ?>
 
 <html lang="en">
 

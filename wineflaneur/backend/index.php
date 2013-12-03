@@ -22,11 +22,11 @@ include(ROOT_PATH . 'inc/header.php');
 		<p>
 			Another PHP project I used to get a better understanding of objects, methods, and classes.
 		</p>
-		<img src="<?php echo BASE_URL; ?>inc/img/cms.png" alt="sample_store" width="500 px" height=""/><a href="display.php" class="btn btn-primary btn-large">
+		<img src="<?php echo BASE_URL; ?>inc/img/cms.png" alt="sample_store" width="500 px" height=""/><a href="<?php echo BASE_URL; ?>backend/CMS/" class="btn btn-primary btn-large">
 			Check It Out&raquo;
 		</a>
 	</div>
 </div>
-<?
-include(ROOT_PATH . 'inc/footer.php'); ?>
+<?php
+include(ROOT_PATH . 'inc/footer.php');
 ?>

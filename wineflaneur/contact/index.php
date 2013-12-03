@@ -43,7 +43,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 ?><?php
 $pageTitle="Contact Matt";
 $section="contact";
-include('inc/header.php');
+require_once('../inc/config.php');
+include(ROOT_PATH . 'inc/header.php');
 ?>
 <!DOCTYPE html>
 
@@ -122,7 +123,7 @@ include('inc/header.php');
                         }
                         ?>
         </div>
-    </div><script src="inc/js/jquery.js" type="text/javascript"></script> <script type="text/javascript">
+    </div><script src="<?php echo BASE_URL; ?>inc/js/jquery.js"> type="text/javascript"></script> <script type="text/javascript">
     var $submit=$("submit input");
         var $required=$(".required");
         function containsBlanks(){
@@ -155,6 +156,6 @@ include('inc/header.php');
         });
         requiredFilledIn();
     </script><?php
-    include('inc/footer.php')?>
+  include(ROOT_PATH . 'inc/footer.php')?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php 
 $pageTitle = "Location";
 $section = "location";
-include('inc/header.php'); ?>
+ ?>
 
 <p class-="static_map">
 	<img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBn_ImXhuUta6PSuoXTuzVoM99mtWffefk&sensor=false&size=400x300&markers=Ann+Arbor" alt="Ann Arbor">
@@ -11,7 +11,7 @@ include('inc/header.php'); ?>
 </div>
 
 	
-	<script type="text/javascript" src="inc/js/jquery.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL; ?>inc/js/jquery.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn_ImXhuUta6PSuoXTuzVoM99mtWffefk&sensor=false"></script>
 	<script type="text/javascript">
 	$(".static_map").remove();
@@ -37,6 +37,10 @@ include('inc/header.php'); ?>
 	  });
 		  
     </script>
+
+    <?
+include(ROOT_PATH . 'inc/footer.php');
+?>
     
     
 <!--At some point add prepend to get rid of the static map, for now I want to keep it-->
