@@ -1,7 +1,7 @@
-<?php 
+<?PHP 
 $pageTitle = "Location";
-$section = "location";
- ?>
+require_once('../inc/config.php');
+include(ROOT_PATH . 'inc/header.php'); ?>
 
 <p class-="static_map">
 	<img src="http://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBn_ImXhuUta6PSuoXTuzVoM99mtWffefk&sensor=false&size=400x300&markers=Ann+Arbor" alt="Ann Arbor">

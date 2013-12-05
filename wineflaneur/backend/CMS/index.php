@@ -20,7 +20,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
   
   <?php
 
-  include_once('CMS.php');
+  include_once(ROOT_PATH . 'backend/CMS/class.cms.php');
   $obj = new CMS();
   $obj->host = 'wineflaneur.com';
   $obj->username = 'cms_user';
