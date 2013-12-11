@@ -20,4 +20,8 @@ include(ROOT_PATH . 'inc/header.php'); ?>
   </div>
 </div>
 
+  <div>
+    <a href="<?php echo BASE_URL; ?>frontend/list/" class="btn btn-large btn-primary" type="button">Sample App List</a>
+  </div>
+
 <? include(ROOT_PATH . 'inc/footer.php'); ?>
